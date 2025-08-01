@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
         <div>
           <h1 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-            SHEIKHSADI
+            APURBA-ROY
           </h1>
         </div>
         <ul className="menu menu-horizontal flex gap-4">

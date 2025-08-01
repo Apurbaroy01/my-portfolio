@@ -1,4 +1,6 @@
 import { FaReact, FaJs, FaNode, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import devoloper from '../assets/developer.json'
+import Lottie from "lottie-react";
 
 const Hero = () => {
   return (
@@ -12,7 +14,9 @@ const Hero = () => {
             MERN stack Developer
           </span>
         </h1>
-        <p className="text-gray-400 text-lg">Creating Innovative, Functional, and User-Friendly Websites for Digital Solutions.</p>
+        <p className="text-gray-400 text-lg">
+          Creating Innovative, Functional, and User-Friendly Websites for Digital Solutions.
+        </p>
 
         <div className="flex flex-wrap gap-4">
           <span className="badge badge-outline text-white">React</span>
@@ -33,13 +37,11 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right Image */}
+      {/* Right Lottie Animation */}
       <div className="hidden md:flex justify-end">
-        <img
-          src="/your-path-to-image.png"
-          alt="MERN Developer Illustration"
-          className="max-w-md animate-fade-in"
-        />
+        <div className="max-w-md w-full">
+          <Lottie animationData={devoloper}></Lottie>
+        </div>
       </div>
     </div>
   );
