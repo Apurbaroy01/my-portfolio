@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Root';
+import GridBackground from './Components/Backround/GridBackground';
 
 
 
@@ -13,7 +14,9 @@ import Root from './Root';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element: <GridBackground>
+      <Root></Root>
+    </GridBackground>
   },
 ]);
 

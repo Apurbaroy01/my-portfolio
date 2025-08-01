@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import profile from '../assets/profile.jpg'
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
         </div>
 
         {/* Right Image with Badge */}
-        <div className="relative md:w-1/2 flex justify-center hover:scale-105 transition-transform duration-300 shadow-3xl">
+        <motion.div  className="relative md:w-1/2 flex justify-center hover:scale-105 transition-transform duration-300 shadow-3xl">
           <img
             src={profile}
             alt="Apurba-roy"
@@ -25,7 +26,7 @@ const About = () => {
           />
 
     
-        </div>
+        </motion.div>
       </section>
     </section>
   );

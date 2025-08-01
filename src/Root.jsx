@@ -9,7 +9,7 @@ import Skills from './Components/Skills';
 
 const Root = () => {
     return (
-        <div className='bg-[#0f051d]'>
+        <div >
             <Navbar></Navbar>
             <Hero></Hero>
             <About></About>
