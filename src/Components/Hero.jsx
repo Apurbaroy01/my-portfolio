@@ -97,13 +97,13 @@ const Hero = () => {
           variants={fadeInUp}
           custom={5}
         >
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
+          <a href="https://github.com/Apurbaroy01" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
+          <a href="www.linkedin.com/in/apurba-roy01" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
+          <a href="https://www.instagram.com/apurbaroy02/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
             <FaInstagram />
           </a>
         </motion.div>
