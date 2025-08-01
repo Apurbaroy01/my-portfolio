@@ -6,19 +6,19 @@ const contactInfo = [
   {
     icon: <MdEmail className="text-blue-500 text-3xl" />,
     title: "Email",
-    value: "mizanurrahman.dev70@gmail.com",
-    link: "mailto:mizanurrahman.dev70@gmail.com",
+    value: "apurbaroy00011@gmail.com",
+    link: "mailto:apurbaroy00011@gmail.com",
   },
   {
     icon: <MdPhone className="text-green-500 text-3xl" />,
     title: "Phone",
-    value: "+880 1988 637609",
-    link: "tel:+8801988637609",
+    value: "+880 1311 271610",
+    link: "tel:+8801311271610",
   },
   {
     icon: <MdLocationOn className="text-purple-500 text-3xl" />,
     title: "Location",
-    value: "Bakshing, Jamalpur, Mymensingh, Bangladesh",
+    value: "Rajapur, Ramshill, Kotalipara, Bangladesh",
   },
 ];
 

@@ -98,7 +98,7 @@ const Projects = () => {
               <div className="pt-2">
                 <a
                   href={project.link}
-                  className="text-base sm:text-lg inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-5 py-2 rounded-md font-medium shadow hover:opacity-90 transition"
+                  className="text-base  sm:text-lg inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-5 py-2 rounded-md font-medium shadow hover:opacity-90 transition"
                 >
                   View Project ↗
                 </a>
@@ -112,7 +112,7 @@ const Projects = () => {
         <div className="flex justify-center mt-10">
           <button
             onClick={() => setVisibleCount((prev) => prev + 3)}
-            className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+            className="text-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition"
           >
             Show More ↓
           </button>
