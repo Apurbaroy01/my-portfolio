@@ -62,7 +62,7 @@ const Hero = () => {
           variants={fadeInUp}
           custom={3}
         >
-          {['React', 'JavaScript', 'Node.js', 'Tailwind'].map((skill, index) => (
+          {['React', 'JavaScript', 'Node.js', 'Tailwind'].map((skill) => (
             <motion.span
               key={skill}
               whileHover={{ scale: 1.1 }}
