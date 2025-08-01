@@ -17,11 +17,11 @@ const About = () => {
         </div>
 
         {/* Right Image with Badge */}
-        <div className="relative md:w-1/2 flex justify-center">
+        <div className="relative md:w-1/2 flex justify-center hover:scale-105 transition-transform duration-300 shadow-3xl">
           <img
             src={profile}
             alt="Apurba-roy"
-            className="rounded-2xl max-w-sm shadow-xl object-cover"
+            className="rounded-2xl max-w-sm shadow-3xl object-cover border-2 p-5"
           />
 
     
