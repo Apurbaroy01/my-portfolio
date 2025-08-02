@@ -7,6 +7,14 @@ import reactjs from '../assets/icon/reactjs.png'
 import vite from '../assets/icon/vite.png'
 import node from '../assets/icon/node.png'
 import expressjs from '../assets/icon/expressjs.png'
+import mongodb from '../assets/icon/mongodb.png'
+import firebase from '../assets/icon/firebase.png'
+import bootstrap from '../assets/icon/bootstrap.png'
+import material from '../assets/icon/material.png'
+import github from '../assets/icon/github.png'
+import Vercel from '../assets/icon/Vercel.svg'
+import Netlify from '../assets/icon/Netlify.svg'
+import sweetalaet from '../assets/icon/sweetalaet.png'
 
 // Sample skill data
 const skills = [
@@ -18,14 +26,14 @@ const skills = [
   { name: 'Vite', icon: vite },
   { name: 'Node JS', icon: node },
   { name: 'Express Js', icon: expressjs },
-  { name: 'MongoDB', icon: '/skills/node.png' },
-  { name: 'Bootstrap', icon: '/skills/bootstrap.png' },
-  { name: 'Git Hub', icon: '/skills/bootstrap.png' },
-  { name: 'Firebase', icon: '/skills/firebase.png' },
-  { name: 'Material UI', icon: '/skills/materialui.png' },
-  { name: 'Vercel', icon: '/skills/vercel.png' },
-  { name: 'SweetAlert2', icon: '/skills/sweetalert2.png' },
-  { name: 'Netlify', icon: '/skills/sweetalert2.png' },
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'Bootstrap', icon: bootstrap },
+  { name: 'Git Hub', icon: github },
+  { name: 'Firebase', icon: firebase },
+  { name: 'Material UI', icon: material },
+  { name: 'Vercel', icon: Vercel },
+  { name: 'SweetAlert2', icon: sweetalaet },
+  { name: 'Netlify', icon: Netlify },
 ];
 
 // Animation variants
