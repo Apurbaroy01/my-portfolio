@@ -1,19 +1,22 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
+import project2 from "../assets/projects/project.png"
+import project1 from "../assets/projects/project1.png"
+
 const Projects = () => {
   const allProjects = [
     {
-      title: "Portfolio Website",
+      title: "Coffee Shop",
       description: "My personal portfolio built using React and Tailwind.",
-      image: "https://via.placeholder.com/400x200",
-      link: "#",
+      image: project1,
+      link: "https://coffee-client.web.app/",
     },
     {
       title: "Todo App",
       description: "A simple todo app with full CRUD features.",
-      image: "https://via.placeholder.com/400x200",
-      link: "#",
+      image: project2,
+      link: "https://coffee-shop-admin.web.app/",
     },
     {
       title: "E-commerce App",
