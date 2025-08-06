@@ -34,7 +34,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
+        
       >
         Get In Touch
       </motion.h2>
@@ -46,7 +46,7 @@ const Contact = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          
         >
           <div className="space-y-6 bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-md">
             {contactInfo.map((info, index) => (
@@ -84,7 +84,7 @@ const Contact = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          
           className="w-full md:w-1/2 bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-md"
         >
           <form className="space-y-6 text-xl">

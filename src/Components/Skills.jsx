@@ -69,7 +69,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        
       >
         Skills
       </motion.h2>
@@ -79,7 +79,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        
       >
         What I Can Do?
       </motion.h2>
@@ -89,7 +89,7 @@ const Skills = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        
       >
         {skills.map((skill, index) => (
           <motion.div

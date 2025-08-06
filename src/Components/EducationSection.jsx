@@ -58,7 +58,7 @@ const EducationSection = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          
           className="flex justify-center"
         >
           <div className="w-60 max-w-md">
@@ -75,7 +75,7 @@ const EducationSection = () => {
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              
               className="relative border border-purple-500/30 rounded-xl  p-6 bg-gradient-to-br from-[#1e293b] to-[#111827] shadow-md hover:shadow-xl transition-all duration-300"
             >
               <div className="absolute -left-4 top-4 w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white shadow-md">

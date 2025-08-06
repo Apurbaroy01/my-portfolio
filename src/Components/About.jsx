@@ -23,7 +23,7 @@ const About = () => {
         whileInView="visible"
         variants={fadeInUp}
         custom={1}
-        viewport={{ once: true }}
+        
       >
         About Me
       </motion.h2>
@@ -34,7 +34,7 @@ const About = () => {
         whileInView="visible"
         variants={fadeInUp}
         custom={2}
-        viewport={{ once: true }}
+       
       >
         I am a passionate React developer with a strong focus on building clean, modern, and responsive web applications using React, TailwindCSS, and modern web tools.
       </motion.p>
@@ -47,7 +47,7 @@ const About = () => {
           whileInView="visible"
           variants={fadeInUp}
           custom={3}
-          viewport={{ once: true }}
+          
         >
           <h2 className="text-3xl font-bold text-green-700 uppercase">Who I am?</h2>
           <p className="text-lg leading-relaxed">
@@ -62,7 +62,7 @@ const About = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
           whileHover={{ scale: 1.05 }}
-          viewport={{ once: true }}
+          
         >
           <img
             src={profile}
