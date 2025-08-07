@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import project2 from "../assets/projects/project.png"
 import project1 from "../assets/projects/project1.png"
+import project3 from "../assets/projects/project2.png"
 
 const Projects = () => {
   const allProjects = [
@@ -13,16 +14,16 @@ const Projects = () => {
       link: "https://coffee-client.web.app/",
     },
     {
-      title: "Todo App",
+      title: "Coffee Shop admin",
       description: "A simple todo app with full CRUD features.",
       image: project2,
       link: "https://coffee-shop-admin.web.app/",
     },
     {
-      title: "E-commerce App",
+      title: "Law-Student",
       description: "An online shopping platform with cart and checkout.",
-      image: "https://via.placeholder.com/400x200",
-      link: "#",
+      image: project3,
+      link: "https://civiladmin.netlify.app/",
     },
     {
       title: "Blog Platform",
@@ -95,9 +96,9 @@ const Projects = () => {
               alt={project.title}
               className="w-full  object-cover"
             />
-            <div className="p-5 space-y-3">
-              <h3 className="text-xl sm:text-2xl font-bold">{project.title}</h3>
-              <p className="text-gray-300 text-base sm:text-lg">{project.description}</p>
+            <div className="p-5 ">
+              <h3 className="text-xl  font-bold">{project.title}</h3>
+              <p className="text-gray-300 text-sm ">{project.description}</p>
               <div className="pt-2">
                 <a
                   href={project.link}
