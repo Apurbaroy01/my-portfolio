@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-6 md:px-20 bg-gradient-to-br bg-transparent text-white relative overflow-hidden"
+      className="py-24 px-16 md:px-20 bg-gradient-to-br bg-transparent text-white relative overflow-hidden"
     >
       {/* Title */}
       <motion.h2

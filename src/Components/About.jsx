@@ -16,7 +16,7 @@ const fadeInUp = {
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-6 bg-transparent text-center">
+    <section id="about" className="py-16 px-6  bg-transparent text-center">
       <motion.h2
         className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-6xl font-bold mb-4"
         initial="hidden"
@@ -29,7 +29,7 @@ const About = () => {
       </motion.h2>
 
       <motion.p
-        className="text-white max-w-2xl mx-auto text-lg"
+        className="text-white max-w-2xl mx-auto text-lg px-10"
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
@@ -42,7 +42,7 @@ const About = () => {
       <section className="min-h-screen bg-transparent text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 gap-10">
         {/* Left Text */}
         <motion.div
-          className="md:w-1/2 space-y-6 text-center md:text-left"
+          className="md:w-1/2 space-y-6 text-center md:text-left px-10"
           initial="hidden"
           whileInView="visible"
           variants={fadeInUp}
@@ -67,7 +67,7 @@ const About = () => {
           <img
             src={profile}
             alt="Apurba Roy"
-            className="rounded-2xl max-w-sm object-cover w-auto  shadow-2xl "
+            className=" rounded-2xl max-w-sm object-cover w-80  shadow-2xl "
           />
         </motion.div>
       </section>

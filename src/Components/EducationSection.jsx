@@ -67,7 +67,7 @@ const EducationSection = () => {
         </motion.div>
 
         {/* Right - Education Timeline */}
-        <div className="flex flex-col gap-6 p-5">
+        <div className="flex flex-col gap-6 p-6">
           {educationData.map((item, index) => (
             <motion.div
               key={index}
@@ -76,14 +76,14 @@ const EducationSection = () => {
               initial="hidden"
               whileInView="visible"
               
-              className="relative border border-purple-500/30 rounded-xl  p-6 bg-gradient-to-br from-[#1e293b] to-[#111827] shadow-md hover:shadow-xl transition-all duration-300"
+              className="relative border border-purple-500/30 rounded-xl  p-4 bg-gradient-to-br from-[#1e293b] to-[#111827] shadow-md hover:shadow-xl transition-all duration-300"
             >
               <div className="absolute -left-4 top-4 w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white shadow-md">
                 <FaGraduationCap size={16} />
               </div>
-              <h3 className="text-xl font-semibold mb-1 ml-6">{item.title}</h3>
-              <span className="text-sm text-gray-400 ml-6">{item.duration}</span>
-              <p className="text-gray-300 text-sm mt-1 ml-6">{item.institution}</p>
+              <h3 className="text-xl font-semibold mb-1 ml-3">{item.title}</h3>
+              <span className="text-sm text-gray-400 ml-3">{item.duration}</span>
+              <p className="text-gray-300 text-sm mt-1 ml-3">{item.institution}</p>
             </motion.div>
           ))}
         </div>

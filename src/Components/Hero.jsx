@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="min-h-screen text-white grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-20 py-16 gap-10">
+    <div className="min-h-screen text-white grid grid-cols-1 md:grid-cols-2 items-center px-20 md:px-20 py-16 gap-10 ">
       {/* Left Section */}
       <motion.div
         initial="hidden"
@@ -50,7 +50,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0"
+          className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0 "
           variants={fadeInUp}
           custom={2}
         >

@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section className="py-16 px-6 bg-base-200">
+    <section className="py-16 px-16 bg-base-200">
       <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-6xl font-bold  text-primary  text-center mb-10 text-primary">Experience</h2>
       <div className="max-w-3xl mx-auto space-y-6">
         <div className=" p-6 rounded-xl shadow">

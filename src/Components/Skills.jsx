@@ -63,7 +63,7 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <section className="bg-transparent text-white py-16 px-6 md:px-20">
+    <section className="bg-transparent text-white py-16 px-16 md:px-20">
       <motion.h2
         className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-6xl font-bold text-center mb-6"
         initial={{ opacity: 0, y: -30 }}

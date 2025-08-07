@@ -67,9 +67,9 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-16 px-4 sm:px-6 md:px-12 lg:px-20 bg-transparent text-white">
+    <section id="projects" className="py-16 px-8 sm:px-6 md:px-12 lg:px-20 bg-transparent text-white">
       <motion.h2
-        className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-10"
+        className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-10 p-5"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -79,7 +79,7 @@ const Projects = () => {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
