@@ -78,7 +78,7 @@ const Projects = () => {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
+        className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -93,7 +93,7 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full  object-cover"
             />
             <div className="p-5 space-y-3">
               <h3 className="text-xl sm:text-2xl font-bold">{project.title}</h3>
