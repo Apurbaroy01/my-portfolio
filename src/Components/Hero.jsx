@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="min-h-screen text-white grid grid-cols-1 md:grid-cols-2 items-center px-20 md:px-20 py-16 gap-10 ">
+    <div className="min-h-screen text-white grid grid-cols-1 md:grid-cols-2 items-center px-20 md:px-20 py-16 gap-10 mt-5">
       {/* Left Section */}
       <motion.div
         initial="hidden"

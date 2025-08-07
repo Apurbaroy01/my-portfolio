@@ -67,7 +67,7 @@ const EducationSection = () => {
         </motion.div>
 
         {/* Right - Education Timeline */}
-        <div className="flex flex-col gap-6 p-6">
+        <div className="flex flex-col gap-6 p-10">
           {educationData.map((item, index) => (
             <motion.div
               key={index}
