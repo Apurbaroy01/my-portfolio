@@ -3,6 +3,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import EducationSection from './Components/EducationSection';
 import Experience from './Components/Experience';
+import Footer from './Components/Footer';
 
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
@@ -21,6 +22,7 @@ const Root = () => {
             <EducationSection></EducationSection>
             
             <Contact></Contact>
+            <Footer></Footer>
             
         </div>
     );
