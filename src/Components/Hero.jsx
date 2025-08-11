@@ -2,6 +2,7 @@ import { FaReact, FaJs, FaNode, FaLinkedin, FaInstagram, FaGithub } from "react-
 import Lottie from "lottie-react";
 import devoloper from '../assets/developer.json';
 import { motion } from "framer-motion"; // ✅ make sure it's from "framer-motion"
+import Typewriter from "react-ts-typewriter";
 
 const Hero = () => {
   const fadeInUp = {
@@ -38,6 +39,7 @@ const Hero = () => {
           >
             APURBA-ROY
           </motion.span>
+          
 
           <motion.span
             initial={{ x: 100, opacity: 0 }}
@@ -54,7 +56,7 @@ const Hero = () => {
           variants={fadeInUp}
           custom={2}
         >
-          I build clean, fast, and accessible web applications with seamless user experiences.
+          < Typewriter text="I build clean, fast, and accessible web applications with seamless user experiences."></Typewriter>
         </motion.p>
 
         <motion.div
