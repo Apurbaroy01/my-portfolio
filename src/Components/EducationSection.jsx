@@ -16,7 +16,7 @@ const educationData = [
   },
   {
     title: "Secondary School Certificate",
-    duration: "2020 - 2021",
+    duration: "2021 - 2022",
     institution: "Rajapur Adsha High School",
   },
 ];
