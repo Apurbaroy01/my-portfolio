@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -29,25 +28,13 @@ const Contact = () => {
       className="py-24 px-16 md:px-20 bg-gradient-to-br bg-transparent text-white relative overflow-hidden"
     >
       {/* Title */}
-      <motion.h2
-        className="text-center pb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-4xl md:text-6xl font-bold"
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        
-      >
+      <h2 className="text-center pb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-4xl md:text-6xl font-bold"data-aos="slide-up">
         Get In Touch
-      </motion.h2>
+      </h2>
 
       <div className="flex flex-col md:flex-row gap-10 items-start justify-center">
         {/* Contact Cards */}
-        <motion.div
-          className="w-full md:w-1/2 space-y-6"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          
-        >
+        <div className="w-full md:w-1/2 space-y-6" data-aos="zoom-in-down">
           <div className="space-y-6 bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-md">
             {contactInfo.map((info, index) => (
               <div
@@ -77,16 +64,10 @@ const Contact = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          
-          className="w-full md:w-1/2 bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-md"
-        >
+        <div className="w-full md:w-1/2 bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl backdrop-blur-md"data-aos="zoom-in-up">
           <form className="space-y-6 text-xl">
             <input
               type="text"
@@ -113,7 +94,7 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

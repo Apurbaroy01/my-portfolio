@@ -1,85 +1,38 @@
-import { FaReact, FaJs, FaNode, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import Lottie from "lottie-react";
 import devoloper from '../assets/developer.json';
-import { motion } from "framer-motion"; // ✅ make sure it's from "framer-motion"
 import Typewriter from "react-ts-typewriter";
 
 const Hero = () => {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.3,
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }),
-  };
-
   return (
     <div className="min-h-screen text-white grid grid-cols-1 md:grid-cols-2 items-center px-20 md:px-20 py-16 gap-10 mt-5">
       {/* Left Section */}
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        className="space-y-6 text-center md:text-left"
-      >
-        <motion.h1
-          className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight"
-          variants={fadeInUp}
-          custom={1}
-        >
-          <motion.span
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, duration: 1.5 }}
-            className="block"
-          >
-            APURBA-ROY
-          </motion.span>
-          
+      <div className="space-y-6 text-center md:text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+          <span className="block" data-aos="fade-right">APURBA-ROY</span>
 
-          <motion.span
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-            className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500"
-          >
+          <span  className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500" data-aos="fade-left" >
             MERN Stack Developer
-          </motion.span>
-        </motion.h1>
+          </span>
+        </h1>
 
-        <motion.p
-          className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0 "
-          variants={fadeInUp}
-          custom={2}
-        >
-          < Typewriter text="I build clean, fast, and accessible web applications with seamless user experiences."></Typewriter>
-        </motion.p>
+        <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0">
+          <Typewriter text="I build clean, fast, and accessible web applications with seamless user experiences." />
+        </p>
 
-        <motion.div
-          className="flex flex-wrap justify-center md:justify-start gap-3"
-          variants={fadeInUp}
-          custom={3}
-        >
+        <div className="flex flex-wrap justify-center md:justify-start gap-3">
           {['React', 'JavaScript', 'Node.js', 'Tailwind'].map((skill) => (
-            <motion.span
+            <span
               key={skill}
-              whileHover={{ scale: 1.1 }}
-              className="px-3 py-1 bg-gradient-to-r from-[#312e81] to-[#1e3a8a] rounded-full text-sm font-medium shadow-md"
+              className="px-3 py-1 bg-gradient-to-r from-[#312e81] to-[#1e3a8a] rounded-full text-sm font-medium shadow-md hover:scale-105 transition-transform duration-300"
+              data-aos="fade-down"
             >
               {skill}
-            </motion.span>
+            </span>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex flex-row text-xl sm:flex-row justify-center md:justify-start gap-4 pt-4"
-          variants={fadeInUp}
-          custom={4}
-        >
+        <div className="flex flex-row text-xs sm:flex-row justify-center md:justify-start gap-4 pt-4"data-aos="fade-up">
           <a
             href="#projects"
             className="bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 text-white px-5 py-2 rounded-lg shadow-lg font-medium transition-all text-center"
@@ -92,37 +45,42 @@ const Hero = () => {
           >
             Contact ✉
           </a>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex justify-center md:justify-start gap-6 text-2xl pt-6"
-          variants={fadeInUp}
-          custom={5}
-        >
-          <a href="https://github.com/Apurbaroy01" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
+        <div className="flex justify-center md:justify-start gap-6 text-2xl pt-6" data-aos="fade-right">
+          <a
+            href="https://github.com/Apurbaroy01"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-400 transition shadow-2xl"
+          >
             <FaGithub />
           </a>
-          <a href="www.linkedin.com/in/apurba-roy01" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
+          <a
+            href="www.linkedin.com/in/apurba-roy01"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-400 transition shadow-2xl"
+          >
             <FaLinkedin />
           </a>
-          <a href="https://www.instagram.com/apurbaroy02/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition shadow-2xl">
+          <a
+            href="https://www.instagram.com/apurbaroy02/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-400 transition shadow-2xl"
+          >
             <FaInstagram />
           </a>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {/* Right Section - Lottie Animation */}
-      <motion.div
-        className="flex justify-center md:justify-end"
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-      >
+      <div className="flex justify-center md:justify-end"data-aos="zoom-in-up">
         <div className="max-w-xs sm:max-w-sm md:max-w-md w-full drop-shadow-2xl">
           <Lottie animationData={devoloper} />
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
