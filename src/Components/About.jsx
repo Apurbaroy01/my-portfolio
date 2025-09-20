@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="py-16 px-6 bg-transparent text-center">
       {/* Title */}
       <h2
-        className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-6xl font-bold mb-4"
+        className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 text-4xl md:text-6xl font-bold mb-4"
         data-aos="fade-up"
       >
         About Me
@@ -16,7 +16,7 @@ const About = () => {
 
       {/* Short Intro */}
       <p
-        className="text-white max-w-2xl mx-auto text-lg px-10"
+        className="text-white max-w-2xl mx-auto text-xs md:text-lg  px-10"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -33,10 +33,10 @@ const About = () => {
           data-aos="fade-right"
           data-aos-delay="300"
         >
-          <h2 className="text-3xl font-bold text-green-700 uppercase">
+          <h2 className="text-4xl md:text-6xl font-bold text-green-700 uppercase">
             Who I am?
           </h2>
-          <p className="text-lg leading-relaxed">
+          <p className="text-xs md:text-lg leading-relaxed ">
             My name is <strong>Apurba Roy</strong>. I am a professional and
             enthusiastic front-end developer with a passion for crafting dynamic
             and responsive web applications. I pride myself on being a quick

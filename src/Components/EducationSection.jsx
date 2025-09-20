@@ -40,7 +40,7 @@ const EducationSection = () => {
         </div>
 
         {/* Right - Education Timeline */}
-        <div className="flex flex-col gap-6 p-10">
+        <div className="flex flex-col gap-6 p-10 ">
           {educationData.map((item, index) => (
             <div
               data-aos="slide-up"
@@ -52,7 +52,7 @@ const EducationSection = () => {
               </div>
               <h3 className="text-xl font-semibold mb-1 ml-3"data-aos="slide-left">{item.title}</h3>
               <span className="text-sm text-gray-400 ml-3"data-aos="slide-up">{item.duration}</span>
-              <p className="text-gray-300 text-sm mt-1 ml-3"data-aos="slide-up">{item.institution}</p>
+              <p className="text-gray-300 text-sm mt-1 ml-3"data-aos="slide-right">{item.institution}</p>
             </div>
           ))}
         </div>
